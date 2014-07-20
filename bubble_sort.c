@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 void bubblesort(int p[],int n)
 {
 	int temp,i,j;
@@ -20,7 +20,7 @@ void bubblesort(int p[],int n)
 	}
 }
 
-main()
+int main()
 {
 	int a[20];
 	printf("\nEnter the limit of array");
@@ -41,7 +41,7 @@ main()
 	printf("\n Starting to sort your array via bubble sorting ");
 	bubblesort(a,lim);
 	printf("\nAfter sorting the list is as follows:");
-	for(i=0;i<lim;i++)
+	for(i=0;i<=lim;i++)
 	{
 		printf("\n%d",a[i]);
 	}
