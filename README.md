@@ -2,8 +2,8 @@ Algorithms
 ==========
 
 
-This is just a collection of most used algorithms. :) 
+This is just a collection of most used algorithms and programs for practice purposes. :) 
 
-Also python files of the algorithms have been included for easy access into projects. :D 
+Make sure to edit the Readme when additind something to it.
 
 Suggestions and additions welcome. ^^
