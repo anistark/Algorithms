@@ -22,7 +22,7 @@ int main()
  
    return 0;
 }
- 
+  
 long factorial(int n)
 {
    int c;
