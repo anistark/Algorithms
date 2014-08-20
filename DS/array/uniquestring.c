@@ -1,4 +1,4 @@
-/* Algorithm to determine if a string has unique characters. */
+/* 1.1 Algorithm to determine if a string has unique characters. */
 
 #include <stdio.h>
 #include <string.h>
