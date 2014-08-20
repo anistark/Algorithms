@@ -8,34 +8,42 @@ If the output string is bigger than the original string, then out will be the or
 #include <stdio.h>
 #include <string.h>
 
+char str[100];
+int length;
+
+//recursive code - prefered
+void compress(char *str,int len, int act) {
+	if(len<length) {
+	    int k=len;
+	    int count=0;
+	    int c, n;
+	    while(str[k]==str[len]){
+	        len++; count++;
+	    }
+	    n = 0;
+	    c=count;
+	    do {
+	        c /= 10;
+	        n++;
+	    } while (c != 0);
+	    compress(str,len,act+n+1);
+	    str[act]=str[k];
+	    if(k+count==length) 
+	       str[act+n+1]='\0';
+	    for(c=0;c<n;c++) {
+	        str[act+n-c]=(count%10)+48;
+	        count=count/10;
+	    }
+	}
+	return;
+}
+
 int main()
 {
-	char a[20], c[20];
-	int l, i, cn, j;
-	scanf("%s",a);
-	l= strlen(a);
-	c[0]=a[0];
-	i=1;
-	j=1;
-	while(i<l){
-		cn=1;
-	    if(a[i] != a[i-1]){
-	    	c[j] = a[i];
-	    	c[j+1] = cn;
-	    	j++;
-	    }
-	    else{
-	    	while(a[i]==a[i-1]){
-	    		cn++;
-	    		i++;
-	    		printf("1. %d\n", cn);
-	    	}
-		    c[j]=cn;
-		    printf("2. %c\n", c[j]);
-		    j++;
-	    }
-	    i += cn;
-	}
-	printf("%s\n", c);
+	scanf("%s",str);
+	length=strlen(str);
+	compress(str,0,0);
+	printf("%s\n",str);
 	return 0;
 }
+
