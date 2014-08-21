@@ -11,7 +11,6 @@ If the output string is bigger than the original string, then out will be the or
 char str[100];
 int length;
 
-//recursive code - prefered
 void compress(char *str,int len, int act) {
 	if(len<length) {
 	    int k=len;
