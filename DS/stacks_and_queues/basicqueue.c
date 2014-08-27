@@ -158,29 +158,5 @@ int main ()
             }
         }
     }
-    queue.display(&queue);
-
-    printf("enqueue item 2\n");
-    queue.enqueue(&queue, 2);    
-    printf("enqueue item 3\n");
-    queue.enqueue(&queue, 3);
-    printf("enqueue item 6\n");
-    queue.enqueue(&queue, 6);
-
-    queue.display(&queue);
-
-    printf("peek item %d\n", queue.peek(&queue));
-    queue.display(&queue);
-
-    printf("dequeue item %d\n", queue.dequeue(&queue));
-    printf("dequeue item %d\n", queue.dequeue(&queue));
-    queue.display(&queue);
-
-    printf("dequeue item %d\n", queue.dequeue(&queue));
-    queue.display(&queue);
-    printf("enqueue item 6\n");
-    queue.enqueue(&queue, 6);
-
-    queue.display(&queue);
     return 0;
 }
