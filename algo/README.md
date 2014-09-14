@@ -9,10 +9,10 @@ Written here are some common Algorithms in two most common languages.
 4.	Quick Sort [c][qsortc]
 
 
-[bubblesortc]: 
-[bubblesortpy]: 
-[selectsortc]: 
-[selectsortpy]: 
-[insertsortc]: 
-[insertsortpy]: 
-[qsortc]: 
+[bubblesortc]: https://github.com/anistark/Algorithms/blob/master/algo/c/bubble_sort.c
+[bubblesortpy]: https://github.com/anistark/Algorithms/blob/master/algo/py/bubble_sort.py
+[selectsortc]: https://github.com/anistark/Algorithms/blob/master/algo/c/selection_sort.c
+[selectsortpy]: https://github.com/anistark/Algorithms/blob/master/algo/py/selectionsort.py
+[insertsortc]: https://github.com/anistark/Algorithms/blob/master/algo/c/insertion_sort.c
+[insertsortpy]: https://github.com/anistark/Algorithms/blob/master/algo/py/insertionsort.py
+[qsortc]: https://github.com/anistark/Algorithms/blob/master/algo/c/qsort.c
