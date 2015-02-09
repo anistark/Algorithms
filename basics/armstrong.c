@@ -22,4 +22,4 @@ int main()
       printf("Entered number is not an armstrong number.\n");
  
    return 0;
-}s
+}
