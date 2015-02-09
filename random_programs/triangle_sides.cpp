@@ -13,15 +13,38 @@ using namespace std;
 
 int main()
 {
-	int a[20],n;
+	int a[20],n,c;
 	cin>>n;
-	for (int i = 0; i < n; i++)
-	{
-		cin>>a[i];
-	}
-	for (int i = 0; i < n; i++)
-	{
-		cout <<a[i]<<" ";
+	if(n<3){
+		cout<<"Please Enter an array size greater than 3.\n";
+	}else{
+		for (int i = 0; i < n; i++)
+		{
+			cin>>a[i];
+		}
+		c= 0;
+		for (int k = 2; k < n; k++)
+		{
+			for (int i = 1; i < k; i++)
+			{
+				for (int j = 0; j < i; j++)
+				{
+					if(a[k]>a[i]){
+						if (a[k]>a[j])
+						{
+							if(a[i]+a[j]>a[k]){
+								c++;
+							}
+						}else{
+							if(a[i]+a[k]>a[j]){
+								c++;
+							}
+						}
+					}
+				}
+			}
+		}
+		cout<<"Count : "<<c<<"\n";
 	}
 	return 0;
 }
